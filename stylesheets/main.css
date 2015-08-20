@@ -9679,7 +9679,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   font-size: 114% !important; }
 
 .team-container {
-  background-color: #428bca;
+  background-color: #434B5B;
   background-size: cover;
   background-position: center;
   -webkit-border-radius: 2px;
@@ -9692,8 +9692,8 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 
 .member-name {
   font-family: "blogger_sansmedium_italic", Fallback, sans-serif;
-  background-color: #434B5B;
   color: #F7F5F5;
+  font-size: 14px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -9703,21 +9703,25 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%); }
 
 .member-role {
   font-family: "blogger_sansbold_italic", Fallback, sans-serif;
-  background-color: #434B5B;
+  background-color: rgba(67, 75, 91, 0.9);
   color: #F7F5F5;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  font-size: 85%;
   padding: 0 0.8em;
   position: absolute;
   z-index: 2;
-  top: 60%;
+  top: calc(60% + 48px);
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%); }
 
 .tnc {
   width: 100%;

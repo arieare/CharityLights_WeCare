@@ -405,7 +405,7 @@
 	font-size: $h4 !important;
 }
 .team-container {
-	background-color: #428bca;
+	background-color: $cl-black;
 	background-size: cover;
 	background-position: center;
 	-webkit-border-radius: 2px;
@@ -418,8 +418,9 @@
 }
 .member-name {
 	font-family:"blogger_sansmedium_italic", Fallback, sans-serif;
-	background-color: $cl-black;
+	//background-color: rgba($cl-black,.8);
 	color: $cl-white;
+	font-size: $base-font-size;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
@@ -430,20 +431,24 @@
 	left:50%;
 	transform:translate(-50%,-50%);
 	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
 }
 .member-role {
 	font-family:"blogger_sansbold_italic", Fallback, sans-serif;
-	background-color: $cl-black;
+	background-color: rgba($cl-black,.9);
 	color: $cl-white;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
+	font-size: $small;
 	padding: 0 0.8em;
 	position:absolute;
 	z-index:2;
-	top:60%;
+	top:calc(60% + 48px);
 	left:50%;
 	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
 }
 
 .tnc {
