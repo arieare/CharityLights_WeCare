@@ -1,0 +1,123 @@
+doctype html
+html(lang="id")
+  head
+    - var pagetitle = "WeCare ID – Katalis"
+    - var author = "CharityLights"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //Signup Modal
+    include ./includes/signup-modal.jade
+    //CONTENTS
+    //Section Header
+    .jumbotron.partner-header
+      .blur-patient-bg
+      .container.text-center
+        .col-md-12
+          .row: .col-md-12
+            h1.partner-name(style="margin-top:1em;") Menjadi Katalis
+            h3.section-title “Karena setiap orang bisa membawa perubahan!”
+    //Section About Catalyst
+    .jumbotron: .container
+      .col-md-8.col-md-push-2
+        .panel
+          .partner-detail
+            include ./includes/about-catalyst-example.jade
+              
+    //Section Formulir Catalyst
+    .jumbotron: .container: .col-md-8.col-md-push-2
+      h2.section-title Formulir Medicator
+      form
+        .input-group
+          span.input-group-addon#basic-addon1 Nama*
+          input.form-control(type="text", placeholder="e.g., The Doctor", aria-describedby="basic-addon1", value="", required)
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon2 Usia
+          input.form-control(type="number", placeholder="e.g., 24", aria-describedby="basic-addon2", value="", min="20" max="40")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon3 Alamat
+          input.form-control(type="text", placeholder="e.g., Jl. Setiabudi Jakarta Selatan", aria-describedby="basic-addon3", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon4 Kota
+          input.form-control(type="text", placeholder="e.g., Jakarta", aria-describedby="basic-addon4", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon5 Provinsi
+          input.form-control(type="text", placeholder="e.g., DKI Jakarta", aria-describedby="basic-addon5", value="")
+          span.focus-indicator  
+        .input-group
+          span.input-group-addon#basic-addon6 No. Telp*
+          input.form-control(type="tel", placeholder="e.g., 085x xxx xxx", aria-describedby="basic-addon6", value="", required)
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon7 Profesi
+          input.form-control(type="text", placeholder="e.g., Bidan", aria-describedby="basic-addon7", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon8 Spesialisasi
+          input.form-control(type="text", placeholder="e.g., operasi", aria-describedby="basic-addon8", value="")
+          span.focus-indicator  
+        .input-group
+          span.input-group-addon#basic-addon9 Institusi
+          input.form-control(type="text", placeholder="e.g., operasi", aria-describedby="basic-addon9", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon10 RS Tempat Bekerja
+          input.form-control(type="text", placeholder="e.g., Nama RS", aria-describedby="basic-addon10", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon11 No. KTP
+          input.form-control(type="text", placeholder="e.g., 0990989081xxx", aria-describedby="basic-addon11", value="")
+          span.focus-indicator
+        h2.section-title Formulir Pasien Medicator
+        .input-group
+          span.input-group-addon#basic-addon12 Nama
+          input.form-control(type="text", placeholder="e.g., Dimas", aria-describedby="basic-addon12", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon13 Usia
+          input.form-control(type="number", placeholder="e.g., 12", aria-describedby="basic-addon13", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon14 Jenis Kelamin
+          input.form-control(type="text", placeholder="e.g., Laki-laki", aria-describedby="basic-addon14", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon15 Diagnosis
+          input.form-control(type="text", placeholder="e.g., Asma", aria-describedby="basic-addon15", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon16 RS
+          input.form-control(type="text", placeholder="e.g., RSUD", aria-describedby="basic-addon16", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon17 Kebutuhan
+          input.form-control(type="text", placeholder="e.g., Inhaler", aria-describedby="basic-addon17", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon18 Estimasi Biaya
+          input.form-control(type="text", placeholder="e.g., 50000", aria-describedby="basic-addon18", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon19 Data Tambahan
+          input.form-control(type="text", placeholder="e.g., Isi informasi penunjang lainnya", aria-describedby="basic-addon19", value="")
+          span.focus-indicator
+        .input-group
+          span.input-group-addon#basic-addon20 Foto Pasien
+          input.form-control(type="file", aria-describedby="basic-addon20", value="")
+          span.focus-indicator
+        .tnc
+          include ./includes/medicator-tnc.jade
+        .checkbox
+          label(for="agreement")
+            input(type="checkbox" value="none" id="agreement")
+            | Menyetujui syarat dan ketentuan seorang Medicator            
+        button.btn.primary.full-width(type="button") Submit
+    //Section Footer
+    include ./includes/footer.jade

@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    - var pagetitle = "WeCare ID – Bergabung"
+    - var author = "CharityLights"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //Signup Modal
+    include ./includes/signup-modal.jade
+    //CONTENTS
+    //Section Title
+    .jumbotron.header-join-us
+      .container.text-center
+        h1 Bergabung Bersama Kami
+        p tagline, tagline, tagline, tagline, tagline
+    //Section How it Works
+    .jumbotron.how-it-works
+      .container.text-center
+        h2.section-title &nbsp;
+        .col-md-4.col-sm-4.col-xs-12
+          img(alt="Donatur", src="img/ic_local_hospital@2x.png", height="114px")
+          h3 Donatur
+          p Deskripsi singkat 140 karakter, donatur, donatur, donatur
+        .col-md-4.col-sm-4.col-xs-12
+          img(alt="Medicator", src="img/ic_approve@2x.png", height="114px")
+          h3 Medicator
+          p Deskripsi singkat 140 karakter, donatur, donatur, donatur
+        .col-md-4.col-sm-4.col-xs-12
+          img(alt="Katalis", src="img/ic_donate@2x.png", height="114px")
+          h3 Katalis
+          p Deskripsi singkat 140 karakter, donatur, donatur, donatur
+    //Section Footer
+    include ./includes/footer.jade

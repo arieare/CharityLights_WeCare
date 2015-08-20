@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="CharityLights">
+    <!-- Link-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Title-->
+    <title>WeCare ID – Katalis</title>
+    <!-- Bootstrap core CSS-->
+    <link href="stylesheets/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ie-emulation-modes-warning.js"></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span><span>Menu</span></button><a href="#" class="navbar-brand"><img alt="CharityLights" src="img/logo_charitylights@2x.png" style="display:inline-block;vertical-align:middle;height:32px;margin-bottom:9px;"><span class="cl-logo hidden-md hidden-sm hidden-xs">&nbsp;<span style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;">Charity</span><span style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;">Lights</span></span></a>
+        </div>
+        <!--Nav links toggle-->
+        <div id="navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="all_patients.html">Meet the Patients</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <!--li: a(href="#") Contact-->
+            <li><a href="#" data-toggle="modal" data-target=".loginmodal">Login</a></li>
+            <li><a href="#" data-toggle="modal" data-target=".signupmodal">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Login Modal-->
+    <div role="dialog" aria-labelledby="loginmodal" class="modal fade loginmodal">
+      <div role="document" class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="loginmodal" class="modal-title">Log In</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form class="row">
+                <div class="input-group"><span id="basic-addon1" class="input-group-addon">Email</span>
+                  <input type="text" placeholder="e.g., doctor.who@mail.com" aria-describedby="basic-addon1" class="form-control"><span class="focus-indicator"></span>
+                </div>
+                <div class="input-group"><span id="basic-addon2" class="input-group-addon">Password</span>
+                  <input type="password" placeholder="e.g., ••••••••••••" aria-describedby="basic-addon2" class="form-control"><span class="focus-indicator"></span>
+                </div>
+                <button type="button" class="btn primary full-width">Log In Now</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--br--><a class="btn-link">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Signup Modal-->
+    <div role="dialog" aria-labelledby="signupmodal" class="modal fade signupmodal">
+      <div role="document" class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="signupmodal" class="modal-title">Sign Up</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form class="row">
+                <div class="input-group"><span id="basic-addon1" class="input-group-addon">Full Name</span>
+                  <input type="text" placeholder="The Doctor" aria-describedby="basic-addon1" class="form-control"><span class="focus-indicator"></span>
+                </div>
+                <div class="input-group"><span id="basic-addon2" class="input-group-addon">Email</span>
+                  <input type="text" placeholder="e.g., doctor.who@mail.com" aria-describedby="basic-addon2" class="form-control"><span class="focus-indicator"> </span>
+                </div>
+                <div class="input-group"><span id="basic-addon3" class="input-group-addon">Password</span>
+                  <input type="password" placeholder="e.g., ••••••••••••" aria-describedby="basic-addon3" class="form-control"><span class="focus-indicator"> </span>
+                </div>
+                <!--.input-group
+                span.input-group-addon#basic-addon4 Retype Password
+                input.form-control(type="password", placeholder="e.g., ••••••••••••", aria-describedby="basic-addon4")
+                -->
+                <button type="button" class="btn primary full-width">Sign Up Now</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--br--><span>OR</span><br><a class="btn-link facebook">Sign Up using Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CONTENTS-->
+    <!--Section Header-->
+    <div class="jumbotron partner-header">
+      <div class="blur-patient-bg"></div>
+      <div class="container text-center">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 style="margin-top:1em;" class="partner-name">Menjadi Katalis</h1>
+              <h3 class="section-title">“Karena setiap orang bisa membawa perubahan!”</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Section About Catalyst-->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="col-md-8 col-md-push-2">
+          <div class="panel">
+            <div class="partner-detail">
+              <h3 class="section-title">Apa itu Katalis?</h3>
+              <p>
+                Katalis adalah seseorang yang menjadi penghubung antara pasien dan WeCare ID
+                
+              </p>
+              <h3 class="section-title">Bagaimana seorang Katalis bekerja?</h3>
+              <p>KeKatalis adalah seseorang yang memiliki perhatian terhadap apa yang sedang terjadi di sekelilingnya. Mereka menyadari banyaknya masyarakat Indonesia yang memiliki keterbatasan dalam memperoleh pelayanan kesehatan yang optimal.</p>
+              <p>Mereka bisa saja seorang dokter, perawat, mahasiswa, keluarga, atau bahkan petugas kebersihan yang mengetahui keadaan individu lainnya yang sedang sakit dan membutuhkan pelayanan medis tertentu tetapi terhambat oleh biaya.</p>
+              <p>Katalis lah yang bertugas memasukkan data dari pasien tersebut ke dalam website WeCare ID – tentunya dengan persetujuan pasien terlebih dahulu.</p>
+              <p>
+                Setelah Katalis memasukkan data pasien, tim medis kami akan menghubungi katalis dan melakukan verifikasi kebenaran data dan kondisi dari pasien. Tim medis kami pun juga akan melihat apakah keadaan pasien tersebut sesuai dengan kriteria kami, serta meminta persetujuan langsung dari pasien maupun keluarga pasien.
+                
+              </p>
+              <h3 class="section-title">Bagaimana caranya menjadi seorang Katalis?</h3>
+              <p>Seorang katalis dapat langsung memasukkan data pasien ke dalam formulir katalis berikut ini:</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Section Formulir Catalyst-->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="col-md-8 col-md-push-2">
+          <h2 class="section-title">Formulir Medicator</h2>
+          <form>
+            <div class="input-group"><span id="basic-addon1" class="input-group-addon">Nama*</span>
+              <input type="text" placeholder="e.g., The Doctor" aria-describedby="basic-addon1" value="" required class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon2" class="input-group-addon">Usia</span>
+              <input type="number" placeholder="e.g., 24" aria-describedby="basic-addon2" value="" min="20" max="40" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon3" class="input-group-addon">Alamat</span>
+              <input type="text" placeholder="e.g., Jl. Setiabudi Jakarta Selatan" aria-describedby="basic-addon3" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon4" class="input-group-addon">Kota</span>
+              <input type="text" placeholder="e.g., Jakarta" aria-describedby="basic-addon4" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon5" class="input-group-addon">Provinsi</span>
+              <input type="text" placeholder="e.g., DKI Jakarta" aria-describedby="basic-addon5" value="" class="form-control"><span class="focus-indicator"> </span>
+            </div>
+            <div class="input-group"><span id="basic-addon6" class="input-group-addon">No. Telp*</span>
+              <input type="tel" placeholder="e.g., 085x xxx xxx" aria-describedby="basic-addon6" value="" required class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon7" class="input-group-addon">Profesi</span>
+              <input type="text" placeholder="e.g., Bidan" aria-describedby="basic-addon7" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon8" class="input-group-addon">Spesialisasi</span>
+              <input type="text" placeholder="e.g., operasi" aria-describedby="basic-addon8" value="" class="form-control"><span class="focus-indicator"> </span>
+            </div>
+            <div class="input-group"><span id="basic-addon9" class="input-group-addon">Institusi</span>
+              <input type="text" placeholder="e.g., operasi" aria-describedby="basic-addon9" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon10" class="input-group-addon">RS Tempat Bekerja</span>
+              <input type="text" placeholder="e.g., Nama RS" aria-describedby="basic-addon10" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon11" class="input-group-addon">No. KTP</span>
+              <input type="text" placeholder="e.g., 0990989081xxx" aria-describedby="basic-addon11" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <h2 class="section-title">Formulir Pasien Medicator</h2>
+            <div class="input-group"><span id="basic-addon12" class="input-group-addon">Nama</span>
+              <input type="text" placeholder="e.g., Dimas" aria-describedby="basic-addon12" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon13" class="input-group-addon">Usia</span>
+              <input type="number" placeholder="e.g., 12" aria-describedby="basic-addon13" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon14" class="input-group-addon">Jenis Kelamin</span>
+              <input type="text" placeholder="e.g., Laki-laki" aria-describedby="basic-addon14" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon15" class="input-group-addon">Diagnosis</span>
+              <input type="text" placeholder="e.g., Asma" aria-describedby="basic-addon15" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon16" class="input-group-addon">RS</span>
+              <input type="text" placeholder="e.g., RSUD" aria-describedby="basic-addon16" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon17" class="input-group-addon">Kebutuhan</span>
+              <input type="text" placeholder="e.g., Inhaler" aria-describedby="basic-addon17" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon18" class="input-group-addon">Estimasi Biaya</span>
+              <input type="text" placeholder="e.g., 50000" aria-describedby="basic-addon18" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon19" class="input-group-addon">Data Tambahan</span>
+              <input type="text" placeholder="e.g., Isi informasi penunjang lainnya" aria-describedby="basic-addon19" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="input-group"><span id="basic-addon20" class="input-group-addon">Foto Pasien</span>
+              <input type="file" aria-describedby="basic-addon20" value="" class="form-control"><span class="focus-indicator"></span>
+            </div>
+            <div class="tnc">
+              <h3>Terms and Conditions</h3>
+              <h4>General</h4><span>Servicing servicing resistor<strong>video computer </strong>element transponder prototype analog solution mainframe network. Solution video debugged feedback sampling extended, infrared, generator generator.</span>
+              <ul>
+                <li>list item number one</li>
+                <li>list item number two</li>
+                <li>list item number three</li>
+              </ul><span>Harmonic gigabyte generator in <strong>sequential interface</strong>. Services, integer device read-only supporting cascading cache capacitance. Proxy boolean solution or data overflow element overflow processor arrray video, reflective extended. Gigabyte debugged distributed, reflective controller disk encapsulated phase network arrray feedback element cache high silicon. Sampling backbone analog remote adaptive extended bridgeware n-tier integer audio femtosecond.</span>
+              <h4>Important Stuff</h4><span>Interface broadband <strong>developer backbone fragmentation</strong>messaging software transmission, sampling cascading element high silicon backbone. Reflective servicing coordinated boolean connectivity extended inversion sequential for. Data distributed backbone bridgeware connectivity logarithmic, sampling ethernet for. Extended logarithmic log video echo gigabyte. Or procedural phaselock sequential port extended deviation sequential, disk recognition gigabyte phaselock proxy messaging arrray. Encapsulated echo deviation boolean system ethernet reducer, pc.</span><span><strong>Backbone frequency echo ethernet</strong>patch femtosecond sampling, integer digital floating-point n-tier dithering disk. Processor reflective boolean includes phase deviation, with log, integral logistically femtosecond, in, integral infrared phaselock. Element developer pc harmonic, plasma with, integral floating-point. Reflective feedback infrared, echo anomoly integral generator reflective led, high overflow servicing gigabyte. Extended integral data, infrared frequency disk broadband transistorized processor disk anomoly, sampling potentiometer kilohertz. Bus overflow, bridgeware fragmentation bypass prototype, interface, for internet pc generator integral, bypass disk, frequency.</span>
+              <h4>Fees</h4><span>Sequential<strong>encapsulated resistor </strong>element converter pc harmonic. Feedback cache hyperlinked debugged generator infrared device network, fragmentation connectivity, debugged. For, dithering interface debugged sequential recognition bypass bridgeware processor backbone sampling logarithmic software. Anomoly infrared logarithmic logarithmic procedural plasma resistor integral silicon deviation. Computer broadband plasma, encapsulated cable kilohertz scan. With logarithmic bridgeware indeterminate sampling, port. Development procedural hyperlinked mainframe, encapsulated boolean software processor transistorized cable with backbone.</span><span>Reflective backbone log transmission cable logarithmic mainframe. Messaging backbone debugged feedback development phaselock metafile n-tier coordinated, cable coordinated coordinated in. <strong>Analog device</strong>transistorized, sequential transistorized with scalar normalizing. Mainframe phase cache anomoly feedback servicing harmonic. Services software pc, femtosecond bypass scalar data element extended cascading capacitance harmonic. Adaptive plasma bypass supporting cascading deviation system pulse broadband bridgeware.</span>
+              <h4>Agreement</h4><span>
+                 
+                Servicing hyperlinked analog encapsulated disk cable with, capacitance element partitioned potentiometer read-only dithering.<strong>Normalizing kilohertz </strong>network solution logarithmic device bus connectivity system mainframe prototype phaselock phase cache.</span><span>Coordinated transmission overflow floating-point distributed supporting scan converter. <strong>Bridgeware backbone </strong>coordinated sampling overflow broadband normalizing connectivity or, internet transmission, bus, encapsulated. Extended element element echo messaging scan, cache video deviation debugged broadband. Pc, supporting hyperlinked coordinated patch, bridgeware transistorized, led frequency scalar. Servicing, plasma recursive boolean includes, computer, femtosecond inversion. Services integer harmonic mainframe scalar prototype broadband n-tier. Echo software application indeterminate dithering bypass plasma bus harmonic patch. Digital, mainframe scalar anomoly bypass, bus potentiometer phaselock plasma, phaselock prompt data disk inversion.</span>
+            </div>
+            <div class="checkbox">
+              <label for="agreement">
+                <input type="checkbox" value="none" id="agreement">Menyetujui syarat dan ketentuan seorang Medicator            
+              </label>
+            </div>
+            <button type="button" class="btn primary full-width">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Section Footer-->
+    <footer class="jumbotron footer">
+      <div class="container">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <h2 style="color:#9894A9;margin-top:0px;margin-bottom:1em;line-height:1;"><span style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;">We</span><span style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;">Care</span><span style="font-family:'blogger_sanslight', Fallback, sans-serif;"> ID</span></h2>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12"><span class="title">About</span>
+          <ul class="nav">
+            <li><a href="#cl">CharityLights</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#privacy">Privacy & Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12"><span class="title">Learn More</span>
+          <ul class="nav">
+            <li><a href="#cl">Transparency</a></li>
+            <li><a href="#blog">Get Involved</a></li>
+            <li><a href="#privacy">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12"><span class="title">Get in Touch</span>
+          <ul class="nav">
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#fb">Facebook</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--Copyright-->
+    <div class="jumbotron copyright">
+      <div class="container text-center"><span>© Pelita Cakrawala Inspirasi Foundation 2015</span></div>
+    </div>
+    <script>$('footer').prev('div').addClass('long-margin-bottom')</script>
+  </body>
+</html>

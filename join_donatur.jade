@@ -1,0 +1,34 @@
+doctype html
+html(lang="id")
+  head
+    - var pagetitle = "WeCare ID – Donatur"
+    - var author = "CharityLights"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //Signup Modal
+    include ./includes/signup-modal.jade
+    //CONTENTS
+    //Section Header
+    .jumbotron.partner-header
+      .blur-patient-bg
+      .container.text-center
+        .col-md-12
+          .row: .col-md-12
+            h1.partner-name(style="margin-top:1em;") Menjadi Donatur
+            h3.section-title “tagline tagline tagline tagline tagline tagline!”
+    //Section About Donatur
+    .jumbotron: .container
+      .col-md-8.col-md-push-2
+        .panel
+          .partner-detail
+            include ./includes/about-donatur-example.jade
+              
+    //Section Apply Donator
+    .jumbotron: .container.text-center
+        a.btn.primary(href="#", data-toggle="modal" data-target=".signupmodal") Daftar Menjadi Donatur
+    //Section Footer
+    include ./includes/footer.jade

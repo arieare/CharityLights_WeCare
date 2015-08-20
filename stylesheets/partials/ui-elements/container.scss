@@ -118,6 +118,23 @@
 			padding-top:2.5em;
 		}
 	}
+	//header-join-us
+	&.header-join-us{
+		background-color: rgba($black, .5);
+		background:
+		linear-gradient(
+			rgba($black, 0.45), 
+			rgba($black, 0.45)
+			),
+		url('../img/Kids 2.jpg');
+		background-size: cover;
+		background-position: center; 
+		color: $cl-white;
+		min-height: 50vh;
+		h1 {
+			padding-top:1em;
+		}
+	}
 	//how it works
 	&.how-it-works{
 		background-color: $cl-yellow;
@@ -288,7 +305,7 @@
 .patient-summary {
 	position: relative;
 }
-.patient-story, .partner-detail {
+.patient-story, .partner-detail, .about-info {
 	padding-top:20px;
 	padding-bottom:10px;
 	p{
@@ -297,6 +314,11 @@
 		letter-spacing: 0.2px;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.section-title {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 1.8em;
 	}
 }
 .patient-row {
@@ -422,4 +444,23 @@
 	top:60%;
 	left:50%;
 	transform:translate(-50%,-50%);
+}
+
+.tnc {
+	width: 100%;
+	height: 250px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 24px;
+	font-size: $small;
+	letter-spacing: 0.8px;
+	line-height: 1.5;
+	background-color: $cl-dark-dark-purple;
+	color: $cl-white;
+	overflow: auto;
+	@include rounded();
+	span {
+		display: inline-block;
+		margin-bottom: 1.5em;
+	}
 }
