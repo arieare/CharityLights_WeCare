@@ -9422,7 +9422,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   padding-bottom: 24px; }
   .jumbotron.header {
     background-color: rgba(61, 59, 71, 0.5);
-    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/Kids 5.jpg");
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/header-img/header_index.jpg");
     background-size: cover;
     background-position: center;
     color: #F7F5F5;
@@ -9431,7 +9431,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
       padding-top: 1em; }
   .jumbotron.header-landing {
     background-color: rgba(61, 59, 71, 0.5);
-    background: linear-gradient(rgba(61, 59, 71, 0.8), rgba(61, 59, 71, 0.8)), url("../img/landing-bg.jpeg");
+    background: linear-gradient(rgba(61, 59, 71, 0.8), rgba(61, 59, 71, 0.8)), url("../img/header-img/header_landing.jpg");
     background-size: cover;
     background-position: center;
     color: #F7F5F5;
@@ -9443,7 +9443,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
       background-color: rgba(238, 238, 238, 0.3); }
   .jumbotron.header-about {
     background-color: rgba(61, 59, 71, 0.5);
-    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/Kids 2.jpg");
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/header-img/header_about_us.jpg");
     background-size: cover;
     background-position: center;
     color: #F7F5F5;
