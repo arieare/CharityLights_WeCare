@@ -9590,16 +9590,16 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 .patient-summary {
   position: relative; }
 
-.patient-story, .partner-detail, .about-info {
+.patient-story, .partner-detail, .about-info, .faq-info {
   padding-top: 20px;
   padding-bottom: 10px; }
-  .patient-story p, .partner-detail p, .about-info p {
+  .patient-story p, .partner-detail p, .about-info p, .faq-info p {
     font-size: 114%;
     font-weight: 300;
     letter-spacing: 0.2px;
     padding-left: 15px;
     padding-right: 15px; }
-  .patient-story .section-title, .partner-detail .section-title, .about-info .section-title {
+  .patient-story .section-title, .partner-detail .section-title, .about-info .section-title, .faq-info .section-title {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 1.8em; }
