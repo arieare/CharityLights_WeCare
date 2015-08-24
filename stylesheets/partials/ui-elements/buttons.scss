@@ -152,4 +152,30 @@ input[type="button"], button, .btn {
 			@include button-box-shadow(0, 0, 0, rgba(black, 0), 0, 0, 0, rgba(white, 0 ));
 		}
 	}
+	&.accordion {
+	color: $cl-black;
+	text-transform: none;
+	background-color: $cl-white;
+	display: block;
+	text-align: left;
+	line-height: 1.5;
+	min-width: 100%;
+	margin-bottom: 1em;
+	@include rounded();
+  	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12), 0px 1px 1px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12), 0px 1px 1px 0px rgba(0,0,0,0.24);
+    border: 1px solid #F7F9FA;
+    line-break: normal;
+    white-space: normal;
+ 	//word-wrap: break-word;
+    //-ms-word-break: break-all;
+     //word-break: break-all;
+     //word-break: break-word;
+	//-webkit-hyphens: auto;
+   //-moz-hyphens: auto;
+     //   hyphens: auto;
+    &:hover {
+    	color: $cl-magenta;
+    }
+	}
 }
