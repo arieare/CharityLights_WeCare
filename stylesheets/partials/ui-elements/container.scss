@@ -310,6 +310,11 @@
 }
 .patient-summary {
 	position: relative;
+	.patient-headline {
+		white-space:nowrap;
+    	overflow:hidden;
+    	text-overflow: ellipsis;
+	}
 }
 .patient-story, .partner-detail, .about-info, .faq-info {
 	padding-top:20px;

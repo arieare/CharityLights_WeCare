@@ -9627,6 +9627,10 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 
 .patient-summary {
   position: relative; }
+  .patient-summary .patient-headline {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .patient-story, .partner-detail, .about-info, .faq-info {
   padding-top: 20px;
