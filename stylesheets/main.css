@@ -9477,11 +9477,11 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
       padding-top: 2.5em; }
   .jumbotron.header-join-us {
     background-color: rgba(61, 59, 71, 0.5);
-    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/Kids 2.jpg");
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/header-img/header_join_us.jpg");
     background-size: cover;
     background-position: center;
     color: #F7F5F5;
-    min-height: 50vh; }
+    min-height: 80vh; }
     .jumbotron.header-join-us h1 {
       padding-top: 1em; }
   .jumbotron.how-it-works {
