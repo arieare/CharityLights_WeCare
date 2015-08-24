@@ -9718,15 +9718,15 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 
 .team-container {
   background-color: #434B5B;
-  background-size: cover;
-  background-position: center;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   padding-bottom: 100%;
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  background-size: cover;
+  background-position: center; }
 
 .member-name {
   font-family: "blogger_sansmedium_italic", Fallback, sans-serif;
