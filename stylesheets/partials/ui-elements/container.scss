@@ -145,6 +145,12 @@
 			border-bottom: 2px solid $cl-white;
 			padding-bottom: 1em;
 		}
+		p.subtitle {
+			font-size: 157%;
+    		letter-spacing: 0px;
+    		margin-bottom: 4em;
+    		color: $cl-dark-yellow;
+		}
 		p {
 			font-size: $h4;
 			font-weight: $regular;

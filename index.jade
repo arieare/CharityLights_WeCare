@@ -30,11 +30,20 @@ html(lang="id")
           include ./includes/patient-card.jade
           include ./includes/patient-card.jade
           include ./includes/patient-card.jade
-        .text-center: a.btn.primary See All The Patients
+        .row.text-center.disclaimer
+          strong WeCare.ID
+          |  memahami mengenai kerahasiaan pasien. Segala informasi  yang kami tampilkan pada halaman ini telah mendapat persetujuan dari pasien/wali. 
+          a.link(href="FAQ.html" target="_blank") Lihat FAQ.
+        .text-center: a.btn.primary Lihat Semua Pasien
     //Section How it Works
     .jumbotron.how-it-works
       .container.text-center
-        h2.section-title How It Works
+        .col-lg-10.col-lg-push-1
+          h2.section-title Bagaimana Kami Bekerja
+          p.subtitle
+            strong: em Wecare.ID
+            |  mengumpulkan dana bagi pasien yang kurang mampu untuk memperoleh pengobatan optimal dengan sistem crowdfunding. 
+      .container.text-center    
         .col-md-4.col-sm-4.col-xs-12
           img(alt="Medical Partner", src="img/ic_local_hospital@2x.png", height="114px")
           h3 Medical Partner
@@ -50,8 +59,10 @@ html(lang="id")
     //Section App Promo
     .jumbotron.app-promo
       .container.text-center
-        h2.section-title Get Moving
-        p Run, walk, or cycling to engage more people and raise more fund for patients with:
+        .col-lg-10.col-lg-push-1
+          h2.section-title Get Moving
+          p Run, walk, or cycling to engage more people and raise more fund for patients with:
+      .container.text-center
         span(style="font-size:400%;font-size:4vmax;margin-top:2em;margin-bottom:2em;display:block;")
           img(alt="phiruntrophy", src="img/logo_phiruntrophy@2x.png", style="display:inline-block;height:52px;height:4vmax;")
           span(style="font-family:'blogger_sansbold_italic', Fallback, sans-serif;display:inline-block;") &nbsp;phiruntrophy

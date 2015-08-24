@@ -178,6 +178,18 @@ a {
 		}
 	}
 }
+//disclaimer
+.disclaimer{
+	font-style: italic;
+	margin-top: -4em;margin-bottom:3em;
+	color: $cl-black;
+	font-size: $small;
+	//background: $cl-black;
+	padding: 1em;
+  	//-webkit-border-radius: 2px;
+  	//-moz-border-radius: 2px;
+  	//border-radius: 2px;
+}
 //code highlighting
 pre {
 	background: $cl-grey;
