@@ -9630,7 +9630,32 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   .patient-summary .patient-headline {
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px; }
+  .patient-summary .patient-loc {
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis; }
+    .patient-summary .patient-loc::before {
+      background-image: url("../img/ic_loc.png");
+      background-size: 100%;
+      width: 15px;
+      height: 18px;
+      background-repeat: no-repeat;
+      content: "";
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 0.2em;
+      margin-left: -0.2em; }
+  .patient-summary .patient-diagnosis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    cursor: help;
+    color: #3D3B47; }
 
 .patient-story, .partner-detail, .about-info, .faq-info {
   padding-top: 20px;

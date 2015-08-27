@@ -314,6 +314,34 @@
 		white-space:nowrap;
     	overflow:hidden;
     	text-overflow: ellipsis;
+    	margin-bottom: 0px;
+	}
+	.patient-loc{
+		white-space:nowrap;
+    	overflow:hidden;
+    	text-overflow: ellipsis;
+		&::before{
+			background-image: url("../img/ic_loc.png");
+		    background-size: 100%;
+		    width: 15px;
+		    height: 18px;
+		    background-repeat: no-repeat;
+		    content: "";
+		    vertical-align: middle;
+		    display: inline-block;
+		    margin-right: 0.2em;
+		    margin-left: -0.2em;
+		}
+	}
+	.patient-diagnosis{
+		white-space:nowrap;
+    	overflow:hidden;
+    	text-overflow: ellipsis;
+		margin-top: 0;
+    	padding-bottom: 1em;
+    	margin-bottom: 0;
+    	cursor: help;
+    	color: $cl-dark-purple;
 	}
 }
 .patient-story, .partner-detail, .about-info, .faq-info {
