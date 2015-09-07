@@ -19,8 +19,9 @@ html(lang="id")
         p Menuju Indonesia yang sehat, merata
         br
         br
+        br
         a(href="#about")
-          img(src="img/btn_scroll_down.png" width="36px")
+          img(src="img/btn_scroll_down.gif" width="48px")
     //Section About WeCare ID
     .jumbotron.about#about
           .container
@@ -56,7 +57,7 @@ html(lang="id")
       .col-md-4.col-md-push-4.col-sm-6.col-sm-push-3.col-xs-10.col-xs-push-1.text-center
         include ./includes/mailchimp-subscribe.jade
       .container.text-center
-        h4.section-title(style="margin-top:10em;display:block;") Dikembangkan Oleh
+        h4.section-title(style="margin-top:15em;display:block;color:#ffffff;") Dikembangkan Oleh
         a(href="http://charitylights.org/", target="_blank", style="font-size:400%;font-size:1.5vmax;margin-bottom:0px;display:block;")
           img(alt="CharityLights", src="img/logo_charitylights@2x.png", style="display:inline-block;vertical-align:middle;height:1.5vmax;margin-bottom:9px;")
           span.cl-logo &nbsp;
@@ -67,7 +68,7 @@ html(lang="id")
             li: a(href="https://www.facebook.com/charitylightsid" target="_blank"): img(src="img/ic_contact_facebook_white.png" width="24px" height="24px")
             li: a(href="https://twitter.com/charitylightsID" target="_blank"): img(src="img/ic_contact_twitter_white.png" width="24px" height="24px")
             li: a(href="mailto:support@charitylights.org"): img(src="img/ic_contact_email_white.png" width="24px" height="24px")
-
+    //smoothscroll
     script.
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
