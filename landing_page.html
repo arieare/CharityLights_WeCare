@@ -26,11 +26,11 @@
       <div class="container text-center">
         <h3 class="section-title">Segera Hadir</h3>
         <h1><span style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;">We</span><span style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;">Care</span> ID</h1>
-        <p>Menuju Indonesia yang sehat, merata</p>
+        <p>Menuju Indonesia yang sehat, merata</p><br><br><a href="#about"><img src="img/btn_scroll_down.png" width="36px"></a>
       </div>
     </div>
     <!--Section About WeCare ID-->
-    <div class="jumbotron about">
+    <div id="about" class="jumbotron about">
       <div class="container">
         <div class="col-md-12">
           <h2 class="section-title text-center">Tentang WeCare ID</h2>
@@ -121,5 +121,21 @@
         </div>
       </div>
     </div>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

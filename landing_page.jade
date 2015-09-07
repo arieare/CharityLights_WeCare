@@ -17,8 +17,12 @@ html(lang="id")
           span(style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Care
           |  ID
         p Menuju Indonesia yang sehat, merata
+        br
+        br
+        a(href="#about")
+          img(src="img/btn_scroll_down.png" width="36px")
     //Section About WeCare ID
-    .jumbotron.about
+    .jumbotron.about#about
           .container
             .col-md-12
               h2.section-title.text-center Tentang WeCare ID
@@ -63,4 +67,20 @@ html(lang="id")
             li: a(href="https://www.facebook.com/charitylightsid" target="_blank"): img(src="img/ic_contact_facebook_white.png" width="24px" height="24px")
             li: a(href="https://twitter.com/charitylightsID" target="_blank"): img(src="img/ic_contact_twitter_white.png" width="24px" height="24px")
             li: a(href="mailto:support@charitylights.org"): img(src="img/ic_contact_email_white.png" width="24px" height="24px")
+
+    script.
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
       
