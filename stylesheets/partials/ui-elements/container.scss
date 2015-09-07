@@ -94,7 +94,7 @@
 		color: $cl-white;
 		min-height: 100vh;
 		h1 {
-			padding-top:1em;
+			padding-top:3em;
 		}
 	.nav > li > a:hover, .nav > li > a:focus {
 	    text-decoration: none;
@@ -252,6 +252,30 @@
 			&:hover{
 				background: none;
 				color: $cl-blue;
+			}
+		}
+	}
+	//subscribe
+	&.subscribe{
+		background-color: $cl-black;
+		min-height: 50vh;
+		.section-title {
+			padding-bottom:1em;
+		}
+		h3 {
+			font-family:'blogger_sansitalic', Fallback, sans-serif;
+			letter-spacing: 0.3px;
+			padding-bottom: 1em;
+			color: $cl-white;
+		}
+		p {
+			font-size: $h4;
+			font-weight: $regular;
+			letter-spacing: 0px;
+		}
+		.contact-list {
+			a:hover{
+				background-color: rgba($cl-white,.3);
 			}
 		}
 	}

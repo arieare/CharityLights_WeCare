@@ -9470,7 +9470,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     color: #F7F5F5;
     min-height: 100vh; }
     .jumbotron.header-landing h1 {
-      padding-top: 1em; }
+      padding-top: 3em; }
     .jumbotron.header-landing .nav > li > a:hover, .jumbotron.header-landing .nav > li > a:focus {
       text-decoration: none;
       background-color: rgba(238, 238, 238, 0.3); }
@@ -9582,6 +9582,22 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     .jumbotron.donation-step .completed:hover {
       background: none;
       color: #3A99D8; }
+  .jumbotron.subscribe {
+    background-color: #434B5B;
+    min-height: 50vh; }
+    .jumbotron.subscribe .section-title {
+      padding-bottom: 1em; }
+    .jumbotron.subscribe h3 {
+      font-family: 'blogger_sansitalic', Fallback, sans-serif;
+      letter-spacing: 0.3px;
+      padding-bottom: 1em;
+      color: #F7F5F5; }
+    .jumbotron.subscribe p {
+      font-size: 114%;
+      font-weight: 400;
+      letter-spacing: 0px; }
+    .jumbotron.subscribe .contact-list a:hover {
+      background-color: rgba(247, 245, 245, 0.3); }
   .jumbotron.footer {
     background-color: #3D3B47; }
     .jumbotron.footer .title {
