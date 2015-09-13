@@ -82,11 +82,11 @@
 	}
 	//header-landing
 	&.header-landing{
-		background-color: rgba($black, .5);
+		background-color: rgba(black, .5);
 		background:
 		linear-gradient(
-			rgba($black, 0.8), 
-			rgba($black, 0.8)
+			rgba($black, 0.7), 
+			rgba($black, 0.7)
 			),
 		url('../img/header-img/header_landing.jpg');
 		background-size: cover;
@@ -94,7 +94,19 @@
 		color: $cl-white;
 		min-height: 100vh;
 		h1 {
-			padding-top:3em;
+			padding-top:1em;
+		}
+		.photo-credit {
+			font-size:$small;
+			position:absolute;
+			right:0.5em;
+			bottom:0.5em;
+			// transform:translateX(50%);
+			// -webkit-transform:translateX(50%);
+			// -moz-transform:translateX(50%);
+			background:rgba(black, 0.5);
+			padding:0.5em 1em;
+			@include rounded-maximum;
 		}
 	.nav > li > a:hover, .nav > li > a:focus {
 	    text-decoration: none;
@@ -142,7 +154,7 @@
 		h3 {
 			font-family:'blogger_sansitalic', Fallback, sans-serif;
 			letter-spacing: 0.3px;
-			border-bottom: 2px solid $cl-white;
+			border-bottom: 2px solid #967F31;
 			padding-bottom: 1em;
 		}
 		p.subtitle {
@@ -175,6 +187,10 @@
 			font-weight: $regular;
 			letter-spacing: 0px;
 		}
+	}
+	//landing partners
+	&.landing-partners {
+		background: white;
 	}
 	//app promo phiruntrophy
 	&.app-promo{
